@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+ 
+ :root {
+     --cor-de-fundo: #0b2341;
+     --amarelo: #d7fc03;
+     --branco: #ffffff;
+     --botao-ativo: #2163c7; 
+     --botao-inativo:#1b4272;
+     --texto-fundo: #1b4270;
+ }
+
+ body {
+     background-color: var(--cor-de-fundo);
+     color: var(--branco);
+     font-family: "Itim", cursive;
+ }
+ 
+ .conteudo-principal {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     max-width: 1200px;
+     width: 100%;
+     margin: 0 auto;
+ }
+
+ .conteudo-principal2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+ 
+ .titulo-principal {
+     text-align: left;
+     width: 100%;
+     font-size: 32px;
+ }
+ 
+ .titulo-principal span {
+     color: var(--amarelo);
+ }
+ 
+ .botao {
+     font-family: "Itim", cursive;
+     background-color: var(--botao-inativo);
+     color: var(--branco);
+     display: flex;
+     justify-content: center;
+     padding: 1em;
+     font-size: 18px;
+     align-items: center;
+     width: 100%;
+     border-bottom: 4px solid var(--botao-ativo);
+     border-left: 2px solid var(--botao-ativo);
+     border-right: 2px solid var(--botao-ativo);
+     border-top: none;
+ }
+
+ .botao2 {
+    font-family: "Itim", cursive;
+    background-color: var(--botao-inativo);
+    color: var(--branco);
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    font-size: 18px;
+    align-items: center;
+    width: 100%;
+    border-bottom: 4px solid var(--botao-ativo);
+    border-left: 2px solid var(--botao-ativo);
+    border-right: 2px solid var(--botao-ativo);
+    border-top: none;
+}
+ 
+ .botao:first-child {
+     border-radius: 60px 60px 0 0;
+ }
+ 
+ .botao2:first-child {
+    border-radius: 60px 60px 0 0;
+}
+
+ .botoes {
+     display: block;
+ }
+
+ .botoes2 {
+    display: block;
+}
+
+.botao.ativo {
+    background-color: var(--botao-ativo);
+    border-bottom: 4px solid var(--amarelo);
+}
+
+.botao2.ativo2 {
+    background-color: var(--botao-ativo);
+    border-bottom: 4px solid var(--amarelo);
+}
+
+.abas-textos {
+    background-color: var(--texto-fundo);
+    padding: 40px;
+    border-radius: 0 0 60px 60px;
+}
+
+.abas-textos2 {
+    background-color: var(--texto-fundo);
+    padding: 40px;
+    border-radius: 0 0 60px 60px;
+}
+
+.aba-conteudo.ativo {
+    display: block;
+}
+
+.aba-conteudo {
+    display: none;
+}
+
+.aba-conteudo2.ativo2 {
+    display: block;
+}
+
+.aba-conteudo2 {
+    display: none;
+}
+
+.aba-conteudo-titulo-principal {
+    font-size: 28px; /* Tamanho padrão */
+    text-align: center;
+}
+
+.aba-conteudo-titulo-secundario{
+    font-size: 18px;
+    text-align: center;
+    color: var(--amarelo);
+    text-transform: uppercase;
+}
+
+.contador{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contador-digito{
+    padding: 0 16px;
+    text-align: center;
+    min-width: 100px; /*adiciona espaçamento fixo entre os numeros*/
+}
+
+.contador-digito-numero{
+    font-size: 60px;
+    margin: 0;
+}
+
+.contador-digito-texto{
+    color: var(--amarelo);
+    font-size: 20px;
+    margin: 0;
+}
+
+h4{
+    text-align: center;
+    font-size: 20px;
+}
+
+ @media screen and (min-width: 768px) {
+    .botoes{
+        display: flex;
+    }
+    .botao:first-child {
+        border-radius: 60px 0 0 0;
+    }
+    .botao:last-child {
+        border-radius: 0 60px 0 0;
+    }
+
+    .botoes2{
+        display: flex;
+    }
+    .botao2:first-child {
+        border-radius: 60px 0 0 0;
+    }
+    .botao2:last-child {
+        border-radius: 0 60px 0 0;
+    }
+
+ }
