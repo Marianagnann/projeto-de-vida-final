@@ -150,10 +150,16 @@
     flex-wrap: wrap;
 }
 
+.contador2{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .contador-digito{
     padding: 0 16px;
     text-align: center;
-    min-width: 100px; /*adiciona espaçamento fixo entre os numeros*/
+    min-width: 50px; /*adiciona espaçamento fixo entre os numeros*/
 }
 
 .contador-digito-numero{
